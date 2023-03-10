@@ -22,7 +22,7 @@ namespace SeverSteal.FtpsParser
                 MessageId = messageId,
                 Recipient = recipient,
                 Sender = sender,
-                Subject = subject
+                Subject = subject.Trim('"')
             };
         }
     }
